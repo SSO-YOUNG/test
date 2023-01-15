@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>드롭다운 메뉴</title>
+  <style>
+    .m_menu {
+      position: relative;
+      width: 150px; height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: lightcyan;
+      border-top: 3px solid white;
+    }
+    .s_menu {
+      position: absolute;
+      top: 40px; left: 0;
+      width: 150px; height: 40px;
+      background-color: lightgray;
+      display: none;
+    }
+    .s_menu a { text-decoration: none; color: black;}
+    .s_menu>div { background-color: lightgray;}
+    .m_menu:hover { border-top: 3px solid red;}
+    .m_menu:hover .s_menu { display: block;}
+    .ss:hover { background-color: #585858;}
+    .ss:hover a { color: #f0f0f0; }
+  </style>
+</head>
+<!--
+  < 드롭다운 메뉴 >
+  - display, position 속성을 기본으로 만드는 메뉴
+-->
+<body>
+  <div class="m_menu">쇼핑찬스
+    <div class="s_menu">
+      <div class="sm1 ss"><a href="#">스마일베송관</a></div>
+      <div class="sm1 ss"><a href="#">빅세일 라이브</a></div>
+      <div class="sm1 ss"><a href="#">서울 우유</a></div>
+      <div class="sm1 ss"><a href="#">미래생활</a></div>
+      <div class="sm1 ss"><a href="#">정관장</a></div>
+    </div>
+  </div>
+</body>
+</html>
